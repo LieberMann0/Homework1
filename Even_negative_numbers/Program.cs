@@ -13,12 +13,13 @@ int i = 1;
 
 while (i < Quan)
 {
-    int num = new Random().Next(-30000, 30001);
-    if (num < 0)
+    int n = new Random().Next(-30000, 30001);
+    if (n < 0)
     {
-        if (num%2 == 0) EvenNeg = ++EvenNeg;       
+        if (n%2 == 0) EvenNeg = ++EvenNeg;       
     }
     i = ++i;
 }
+Quan = 0;
 
 Console.Write(EvenNeg);
